@@ -1,7 +1,6 @@
 <template>
   <div>
     <div class="h-12 bg-indigo-800"></div>
-    <MenuBar />
     <nuxt />
   </div>
 </template>
