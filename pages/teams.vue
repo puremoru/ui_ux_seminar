@@ -70,12 +70,12 @@
 
                 </div>
 
-                <div class="flex m-16 rounded-lg border-2 border-grey overflow-hidden">
+                <div class="flex rounded-lg border-2 border-grey overflow-hidden">
                   <span class="text-3xl text-grey px-3 border-r-2 border-grey">+</span>
                   <input type="text" class="w-full px-4" placeholder="新しいメッセージの入力"/>
                 </div>
                 <div>
-                  <ul class="flex list-none h-full flex-row text-black text-center">
+                  <ul class="flex rounded-lg border-2 border-grey overflow-hidden">
                     <li class="p-4 btn-sidebar cursor-pointer text-xs">アイコン</li>
                     <li class="p-4 btn-sidebar cursor-pointer text-xs">アイコン</li>
                     <li class="p-4 btn-sidebar cursor-pointer text-xs">アイコン</li>
