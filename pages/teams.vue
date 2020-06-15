@@ -70,7 +70,7 @@
 
                 </div>
 
-                <div class="flex rounded-lg border-2 border-grey overflow-hidden">
+                <div class="flex m-15 rounded-lg border-2 border-grey overflow-hidden">
                   <span class="text-3xl text-grey px-3 border-r-2 border-grey">+</span>
                   <input type="text" class="w-full px-4" placeholder="新しいメッセージの入力"/>
                 </div>
