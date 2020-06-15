@@ -75,7 +75,7 @@
                   <input type="text" class="w-full px-4" placeholder="新しいメッセージの入力"/>
                 </div>
                 <div>
-                  <ul class="flex list-none h-full flex-row text-black text-center">
+                  <ul class="flex rounded-lg border-2 border-grey overflow-hidden">
                     <li class="p-4 btn-sidebar cursor-pointer text-xs">アイコン</li>
                     <li class="p-4 btn-sidebar cursor-pointer text-xs">アイコン</li>
                     <li class="p-4 btn-sidebar cursor-pointer text-xs">アイコン</li>
