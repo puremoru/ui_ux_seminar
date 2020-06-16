@@ -73,7 +73,7 @@
                               <span class="text-md mr-2 font-sans">城後 明慈</span>
                               <span class="text-grey ml-auto text-gray-600 text-sm font-light">05/12 11:46</span>
                             </div>
-                          <p class="font-light text-md text-grey-darkest pt-1 mx-4 my-2">やあ！いぶきくん！今日もいい朝だね！</p>
+                          <p class="font-light text-md text-grey-darkest pt-1 mx-4 my-2">hi.</p>
                         </div>
                     </div>
 
@@ -82,7 +82,7 @@
                             <div class="flex items-end mx-4 mt-2">
                               <span class="text-grey text-gray-600 text-sm font-light">05/12 16:56</span>
                             </div>
-                          <p class="font-light text-md text-grey-darkest pt-1 mx-4 my-2">おはよう</p>
+                          <p class="font-light text-md text-grey-darkest pt-1 mx-4 my-2">hoge</p>
                         </div>
                     </div>
 
@@ -96,7 +96,7 @@
                               <span class="text-md mr-2 font-sans">城後 明慈</span>
                               <span class="text-grey ml-auto text-gray-600 text-sm font-light">05/12 16:56</span>
                             </div>
-                          <p class="font-light text-md text-grey-darkest pt-1 mx-4 my-2">今日は何して過ごしてたの？？</p>
+                          <p class="font-light text-md text-grey-darkest pt-1 mx-4 my-2">hi</p>
                         </div>
                     </div>
 
@@ -105,7 +105,7 @@
                             <div class="flex items-end mx-4 mt-2">
                               <span class="text-grey text-gray-600 text-sm font-light">05/13 14:02</span>
                             </div>
-                          <p class="font-light text-md text-grey-darkest pt-1 mx-4 my-2">ごめん、寝てた。</p>
+                          <p class="font-light text-md text-grey-darkest pt-1 mx-4 my-2">hi</p>
                         </div>
                     </div>
 
