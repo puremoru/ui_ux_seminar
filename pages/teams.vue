@@ -5,8 +5,8 @@
       <div class="w-full border shadow h-screen">
 	      <div class="flex">
             <!-- Sidebar / channel list -->
-            <div class="text-purple-lighter w-1/4 pb-6 hidden md:block">
-              <div class="flex items-center mb-6 px-4 mt-5 border-b py-2">
+            <div class="text-purple-lighter pb-6 hidden md:block">
+              <div class="flex items-center mb-6 px-4 mt-5 border-b">
                 <span class="bg-green rounded-full block w-2 h-2"></span>
                 <span class="text-purple-lightest text-xl font-bold">チャット</span>
                 <span class="ml-16 text-sm text-indigo-800">最近</span>
@@ -35,12 +35,15 @@
                 <!-- Top bar -->
                 <div class="border-b flex px-6 py-2 items-center">
                     <div class="flex">
-                        <h3 class="text-grey-darkest text-lg mb-1 font-extrabold flex-initial px-1">hogehoge</h3>
-                        <h3 class="text-grey-darkest text-base mb-1 flex-initial px-1">Chat</h3>
-                        <h3 class="text-grey-darkest text-base mb-1 flex-initial px-1">Files</h3>
-                        <h3 class="text-grey-darkest text-base mb-1 flex-initial px-1">Organization</h3>
-                        <h3 class="text-grey-darkest text-base mb-1 flex-initial px-1">Activity</h3>
-                        <h3 class="text-grey-darkest text-base mb-1 flex-initial px-1">+</h3>
+                        <div class="rounded-full h-4 w-4">
+                          <svg  width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user h-8 w-8 text-gray-500"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                        </div>
+                        <h3 class="text-grey-darkest text-lg mb-1 font-extrabold flex-initial px-1 ml-6">城後 明慈</h3>
+                        <h3 class="text-grey-darkest text-base ml-2 mb-1 flex-initial px-1 font-bold text-indigo-800">チャット</h3>
+                        <h3 class="text-grey-darkest text-base ml-2 mb-1 flex-initial px-1">ファイル</h3>
+                        <h3 class="text-grey-darkest text-base ml-2 mb-1 flex-initial px-1">組織</h3>
+                        <h3 class="text-grey-darkest text-base ml-2 mb-1 flex-initial px-1">最新情報</h3>
+                        <h3 class="text-grey-darkest text-base ml-2 mb-1 flex-initial px-1">＋</h3>
                     </div>
                     <div class="ml-auto hidden md:block">
                         <div class="flex">
@@ -61,39 +64,60 @@
                 <div class="px-6 py-4 flex-1 overflow-scroll-x">
                   <!-- A message -->
                     <div class="flex items-start mb-4">
-                        <img src="https://avatars2.githubusercontent.com/u/343407?s=460&v=4" class="w-10 h-10 rounded mr-3" />
-                        <div class="flex flex-col">
-                            <div class="flex items-end">
-                              <span class="font-bold text-md mr-2 font-sans">killgt</span>
-                              <span class="text-grey text-xs font-light">11:46</span>
+                        <!-- <img src="https://avatars2.githubusercontent.com/u/343407?s=460&v=4" class="w-10 h-10 rounded mr-3" /> -->
+                        <div class="rounded-full h-4 w-4">
+                          <svg  width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user h-8 w-8 text-gray-500"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                        </div>
+                        <div class="flex flex-col ml-6 bg-white">
+                            <div class="flex items-end mx-4 mt-2">
+                              <span class="text-md mr-2 font-sans">城後 明慈</span>
+                              <span class="text-grey ml-auto text-gray-600 text-sm font-light">05/12 11:46</span>
                             </div>
-                          <p class="font-light text-md text-grey-darkest pt-1">The slack from the other side.</p>
+                          <p class="font-light text-md text-grey-darkest pt-1 mx-4 my-2">やあ！いぶきくん！今日もいい朝だね！</p>
                         </div>
                     </div>
 
-                    <!-- A message -->
-                    <div class="flex items-start mb-4">
-                        <img src="https://i.imgur.com/8Km9tLL.jpg" class="w-10 h-10 rounded mr-3" />
-                        <div class="flex flex-col">
-                            <div class="flex items-end">
-                              <span class="font-bold text-md mr-2 font-sans">Olivia Dunham</span>
-                              <span class="text-grey text-xs font-light">12:45</span>
+                    <div class="flex items-start mb-4 justify-end">
+                        <div class="flex flex-col ml-6 bg-indigo-100">
+                            <div class="flex items-end mx-4 mt-2">
+                              <span class="text-grey text-gray-600 text-sm font-light">05/12 16:56</span>
                             </div>
-                          <p class="font-light text-md text-grey-darkest pt-1">How are we supposed to control the marquee space without an utility for it? I propose this:</p>
-                            <div class="bg-grey-lighter border border-grey-light font-mono rounded p-3 mt-2 whitespace-pre">.marquee-lightspeed { -webkit-marquee-speed: fast; }
-    .marquee-lightspeeder { -webkit-marquee-speed: faster; }</div>
+                          <p class="font-light text-md text-grey-darkest pt-1 mx-4 my-2">おはよう</p>
                         </div>
                     </div>
+
+                    <div class="flex items-start mb-4">
+                        <!-- <img src="https://avatars2.githubusercontent.com/u/343407?s=460&v=4" class="w-10 h-10 rounded mr-3" /> -->
+                        <div class="rounded-full h-4 w-4">
+                          <svg  width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user h-8 w-8 text-gray-500"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                        </div>
+                        <div class="flex flex-col ml-6 bg-white">
+                            <div class="flex items-end mx-4 mt-2">
+                              <span class="text-md mr-2 font-sans">城後 明慈</span>
+                              <span class="text-grey ml-auto text-gray-600 text-sm font-light">05/12 16:56</span>
+                            </div>
+                          <p class="font-light text-md text-grey-darkest pt-1 mx-4 my-2">今日は何して過ごしてたの？？</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start mb-4 justify-end">
+                        <div class="flex flex-col ml-6 bg-indigo-100">
+                            <div class="flex items-end mx-4 mt-2">
+                              <span class="text-grey text-gray-600 text-sm font-light">05/13 14:02</span>
+                            </div>
+                          <p class="font-light text-md text-grey-darkest pt-1 mx-4 my-2">ごめん、寝てた。</p>
+                        </div>
+                    </div>
+                    
 
                     <!-- A message -->
                     <div class="flex items-start">
-                        <img src="https://i.imgur.com/qACoKgY.jpg" class="w-10 h-10 rounded mr-3" />
                         <div class="flex flex-col">
                             <div class="flex items-end">
-                              <span class="font-bold text-md mr-2 font-sans">Adam Bishop</span>
-                              <span class="text-grey text-xs font-light">12:46</span>
+                              <span class="font-bold text-md mr-2 font-sans text-gray-200">Adam Bishop</span>
+                              <span class="text-grey text-xs font-light text-gray-200">12:46</span>
                             </div>
-                          <p class="font-light text-md text-grey-darkest pt-1"><a href="#" class="text-blue">@Olivia Dunham</a> the size of the generated CSS is creating a singularity in space/time, we must stop adding more utilities before it's too late!</p>
+                          <p class="font-light text-md text-grey-darkest pt-1 text-gray-200"><a href="#" class="text-blue">@Olivia Dunham</a> the size of the generated CSS is creating a singularity in space/time, we must stop adding more utilities before it's too late!aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa..</p>
                         </div>
                     </div>
 
@@ -136,11 +160,13 @@
                         </div>
                       </li>
                       <li class="p-4 btn-sidebar cursor-pointer text-xs">...</li>
-                      <li class="p-4 btn-sidebar cursor-pointer text-xs">
-                        <div class="flex">
-                          <svg class="h-4 w-4 text-black"  viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <line x1="10" y1="14" x2="21" y2="3" />  <path d="M21 3L14.5 21a.55 .55 0 0 1 -1 0L10 14L3 10.5a.55 .55 0 0 1 0 -1L21 3" /></svg>
-                        </div>
-                      </li>
+                      <div class="flex ml-auto">
+                        <li class="p-4 btn-sidebar cursor-pointer text-xs">
+                          <div>
+                            <svg class="h-4 w-4 text-black"  viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <line x1="10" y1="14" x2="21" y2="3" />  <path d="M21 3L14.5 21a.55 .55 0 0 1 -1 0L10 14L3 10.5a.55 .55 0 0 1 0 -1L21 3" /></svg>
+                          </div>
+                        </li>
+                      </div>
                     </ul>
                   </div>
                 </div>
