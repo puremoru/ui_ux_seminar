@@ -31,7 +31,7 @@
             </div>
 
             <!-- Chat content -->
-            <div class="bg-gray-200 flex flex-col h-screen">
+            <div class="bg-gray-200 flex flex-col h-screen w-auto">
                 <!-- Top bar -->
                 <div class="border-b flex px-6 py-2 items-center">
                     <div class="flex">
@@ -108,7 +108,16 @@
                           <p class="font-light text-md text-grey-darkest pt-1 mx-4 my-2">ごめん、寝てた。</p>
                         </div>
                     </div>
-                    
+
+                    <div class="flex items-start mb-4 justify-end" v-for="m in messages" :key="m">
+                        <div class="flex flex-col ml-6 bg-indigo-100">
+                            <div class="flex items-end mx-4 mt-2">
+                              <span class="text-grey text-gray-600 text-sm font-light">05/13 14:03</span>
+                            </div>
+                          <p class="font-light text-md text-grey-darkest pt-1 mx-4 my-2">{{ m }}</p>
+                        </div>
+                    </div>
+
 
                     <!-- A message -->
                     <div class="flex items-start">
@@ -126,7 +135,7 @@
                 <div class="m-12">
                   <div class="flex rounded-lg border-2 border-grey overflow-hidden">
                     <!-- <span class="text-3xl text-grey px-3 border-r-2 border-grey">+</span> -->
-                    <input type="text" class="w-full px-4 h-10" placeholder="新しいメッセージの入力"/>
+                    <input type="text" class="w-full px-4 h-10" v-model="message" placeholder="新しいメッセージの入力"/>
                   </div>
                   <div>
                     <ul class="flex rounded-lg overflow-hidden">
@@ -160,7 +169,7 @@
                         </div>
                       </li>
                       <li class="p-4 btn-sidebar cursor-pointer text-xs">...</li>
-                      <div class="flex ml-auto">
+                      <div class="flex ml-auto" @click="sendMessage">
                         <li class="p-4 btn-sidebar cursor-pointer text-xs">
                           <div>
                             <svg class="h-4 w-4 text-black"  viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <line x1="10" y1="14" x2="21" y2="3" />  <path d="M21 3L14.5 21a.55 .55 0 0 1 -1 0L10 14L3 10.5a.55 .55 0 0 1 0 -1L21 3" /></svg>
@@ -184,6 +193,18 @@ export default {
   components: {
     MenuBar,
     subMenu
+  },
+  data() {
+    return {
+      message: "",
+      messages: [],
+    }
+  },
+  methods: {
+    sendMessage() {
+      this.messages.push(this.message)
+      this.message = ""
+    }
   }
 }
 </script>
