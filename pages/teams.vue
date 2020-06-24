@@ -126,7 +126,7 @@
                               <span class="font-bold text-md mr-2 font-sans text-gray-200">Adam Bishop</span>
                               <span class="text-grey text-xs font-light text-gray-200">12:46</span>
                             </div>
-                          <p class="font-light text-md text-grey-darkest pt-1 text-gray-200"><a href="#" class="text-blue">@Olivia Dunham</a> the size of the generated CSS is creating a singularity in space/time, we must stop adding more utilities before it's too late!aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa..</p>
+                          <p class="font-light text-md text-grey-darkest pt-1 text-gray-200"><a href="#" class="text-blue">@Olivia Dunham</a> the size of the generated CSS is creating a singularity in space/time, we must stop adding more utilities before it's too aaa</p>
                         </div>
                     </div>
 
@@ -135,7 +135,7 @@
                 <div class="m-12">
                   <div class="flex rounded-lg border-2 border-grey overflow-hidden">
                     <!-- <span class="text-3xl text-grey px-3 border-r-2 border-grey">+</span> -->
-                    <input type="text" class="w-full px-4 h-10" v-model="message" placeholder="新しいメッセージの入力"/>
+                    <input type="text" class="w-full px-4 h-10" v-model="message" @keyup.enter="sendMessage" placeholder="新しいメッセージの入力"/>
                   </div>
                   <div>
                     <ul class="flex rounded-lg overflow-hidden">
@@ -169,7 +169,11 @@
                         </div>
                       </li>
                       <li class="p-4 btn-sidebar cursor-pointer text-xs">...</li>
+
                       <div class="flex ml-auto" @click="sendMessage">
+                        <div class="p-4 text-xs text-gray-500">
+                            Returnで送信, Shift+Returnで改行
+                        </div>
                         <li class="p-4 btn-sidebar cursor-pointer text-xs">
                           <div>
                             <svg class="h-4 w-4 text-black"  viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <line x1="10" y1="14" x2="21" y2="3" />  <path d="M21 3L14.5 21a.55 .55 0 0 1 -1 0L10 14L3 10.5a.55 .55 0 0 1 0 -1L21 3" /></svg>
