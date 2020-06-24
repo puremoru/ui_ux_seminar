@@ -22,7 +22,7 @@
                   <svg  width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user h-8 w-8 text-gray-500"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
                 </div>
                 <div class="ml-2">
-                  <span>城後 明慈</span>
+                  <span>田中 一</span>
                 </div>
                 <div class="flex ml-32 text-sm">
                   <span>06/09</span>
@@ -38,7 +38,7 @@
                         <div class="rounded-full h-4 w-4">
                           <svg  width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user h-8 w-8 text-gray-500"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
                         </div>
-                        <h3 class="text-grey-darkest text-lg mb-1 font-extrabold flex-initial px-1 ml-6">城後 明慈</h3>
+                        <h3 class="text-grey-darkest text-lg mb-1 font-extrabold flex-initial px-1 ml-6">田中 一</h3>
                         <h3 class="text-grey-darkest text-base ml-2 mb-1 flex-initial px-1 font-bold text-indigo-800">チャット</h3>
                         <h3 class="text-grey-darkest text-base ml-2 mb-1 flex-initial px-1">ファイル</h3>
                         <h3 class="text-grey-darkest text-base ml-2 mb-1 flex-initial px-1">組織</h3>
@@ -70,7 +70,7 @@
                         </div>
                         <div class="flex flex-col ml-6 bg-white">
                             <div class="flex items-end mx-4 mt-2">
-                              <span class="text-md mr-2 font-sans">城後 明慈</span>
+                              <span class="text-md mr-2 font-sans">田中 一</span>
                               <span class="text-grey ml-auto text-gray-600 text-sm font-light">05/12 11:46</span>
                             </div>
                           <p class="font-light text-md text-grey-darkest pt-1 mx-4 my-2">hi.</p>
@@ -93,7 +93,7 @@
                         </div>
                         <div class="flex flex-col ml-6 bg-white">
                             <div class="flex items-end mx-4 mt-2">
-                              <span class="text-md mr-2 font-sans">城後 明慈</span>
+                              <span class="text-md mr-2 font-sans">田中 一</span>
                               <span class="text-grey ml-auto text-gray-600 text-sm font-light">05/12 16:56</span>
                             </div>
                           <p class="font-light text-md text-grey-darkest pt-1 mx-4 my-2">hi</p>
@@ -206,6 +206,9 @@ export default {
   },
   methods: {
     sendMessage() {
+      if (!this.message) {
+        return
+      }
       this.messages.push(this.message)
       this.message = ""
     }
